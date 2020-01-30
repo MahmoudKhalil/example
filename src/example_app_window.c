@@ -11,11 +11,13 @@ G_DEFINE_TYPE (ExampleAppWindow, example_app_window, GTK_TYPE_APPLICATION_WINDOW
 static void
 example_app_window_init (ExampleAppWindow *instance)
 {
+    gtk_widget_init_template (GTK_WIDGET (instance));
 }
 
 static void
 example_app_window_class_init (ExampleAppWindowClass *klass)
 {
+    gtk_widget_class_set_template_from_resource (GTK_WIDGET_CLASS (klass), "/org/gtk/example_app/window.ui");
 }
 
 ExampleAppWindow *
