@@ -20,6 +20,8 @@
               <object class="GtkStackSwitcher" id="tabs">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="icon_size">3</property>
+                <property name="stack">stack</property>
               </object>
             </child>
           </object>
